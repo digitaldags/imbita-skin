@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #FAF9F6;
+  color: #1A1A1A;
+  font-family: var(--font-sans);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #E8E4DF;
+}
