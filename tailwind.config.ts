@@ -9,8 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#FAF9F6",
+        "text-primary": "#1A1A1A",
+        "text-muted": "#6B6B6B",
+        maroon: {
+          DEFAULT: "#7C3041",
+          dark: "#5C2233",
+        },
+        divider: "#E8E4DF",
+      },
+      fontFamily: {
+        serif: ["var(--font-serif)", "serif"],
+        sans: ["var(--font-sans)", "sans-serif"],
       },
     },
   },
