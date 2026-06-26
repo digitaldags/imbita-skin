@@ -2,10 +2,10 @@ export default function Hero() {
   return (
     <section className="pt-[96px] pb-[72px]">
       <div className="max-w-[720px] mx-auto px-6">
-        <p className="font-sans text-xs text-text-muted uppercase tracking-[0.08em] mb-4">
+        <p className="font-sans text-xs text-maroon uppercase tracking-[0.08em] mb-4">
           Custom event websites
         </p>
-        <h1 className="font-serif text-[44px] font-normal text-text-primary leading-[1.2] mb-5">
+        <h1 className="font-serif text-[44px] font-normal text-maroon leading-[1.2] mb-5">
           One link. Everything your guests need.
         </h1>
         <p className="font-sans text-base text-text-muted leading-[1.7] max-w-[480px] mb-8">
