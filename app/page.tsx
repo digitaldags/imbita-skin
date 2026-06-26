@@ -4,6 +4,7 @@ import HowItWorks from "@/components/HowItWorks";
 import WhatsIncluded from "@/components/WhatsIncluded";
 import Pricing from "@/components/Pricing";
 import InquiryForm from "@/components/InquiryForm";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <WhatsIncluded />
       <Pricing />
       <InquiryForm />
+      <Footer />
     </>
   );
 }
