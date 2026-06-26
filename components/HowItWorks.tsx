@@ -29,7 +29,7 @@ export default function HowItWorks() {
   return (
     <>
       <hr />
-      <section className="py-[72px] bg-[#F0EBE1]">
+      <section className="py-[48px] md:py-[72px] bg-[#F0EBE1]">
         <div className="max-w-[720px] mx-auto px-6">
           <p className="font-sans text-xs text-maroon uppercase tracking-[0.08em]">
             How it works

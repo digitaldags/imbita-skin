@@ -1,18 +1,18 @@
 export default function Hero() {
   return (
-    <section className="pt-[96px] pb-[72px]">
+    <section className="pt-[64px] pb-[48px] md:pt-[96px] md:pb-[72px]">
       <div className="max-w-[720px] mx-auto px-6">
         <p className="font-sans text-xs text-maroon uppercase tracking-[0.08em] mb-4">
           Custom event websites
         </p>
-        <h1 className="font-serif text-[44px] font-normal text-maroon leading-[1.2] mb-5">
+        <h1 className="font-serif text-[32px] md:text-[44px] font-normal text-maroon leading-[1.2] mb-5">
           One link. Everything your guests need.
         </h1>
         <p className="font-sans text-base text-text-muted leading-[1.7] max-w-[480px] mb-8">
           Venue details, RSVP, attire guide — all in one place. We build it for you.
         </p>
 
-        <div className="flex items-center gap-3 mb-14">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 mb-14">
           <a
             href="#inquire"
             className="bg-maroon text-white text-sm font-medium px-5 py-2.5 rounded-md hover:bg-maroon-dark transition-colors"

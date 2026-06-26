@@ -47,7 +47,7 @@ export default function WhatsIncluded() {
   return (
     <>
       <hr />
-      <section className="py-[72px] bg-[#EDE6DA]">
+      <section className="py-[48px] md:py-[72px] bg-[#EDE6DA]">
         <div className="max-w-[720px] mx-auto px-6">
           <p className="font-sans text-xs text-maroon uppercase tracking-[0.08em]">
             What&apos;s included

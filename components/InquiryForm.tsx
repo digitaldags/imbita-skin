@@ -53,7 +53,7 @@ export default function InquiryForm() {
   return (
     <>
       <hr />
-      <section id="inquire" className="py-[72px]">
+      <section id="inquire" className="py-[48px] md:py-[72px]">
         <div className="max-w-[720px] mx-auto px-6">
           <p className="font-sans text-xs text-maroon uppercase tracking-[0.08em]">
             Get started
