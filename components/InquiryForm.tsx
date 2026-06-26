@@ -15,6 +15,8 @@ export default function InquiryForm() {
     tier: "Regular",
     notes: "",
   });
+  const [honeypot, setHoneypot] = useState("");
+  const [mountTime] = useState(() => Date.now());
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
@@ -36,7 +38,7 @@ export default function InquiryForm() {
       const res = await fetch("/api/inquire", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, company: honeypot, elapsed: Date.now() - mountTime }),
       });
       if (res.ok) {
         setSuccess(true);
@@ -150,6 +152,17 @@ export default function InquiryForm() {
                   placeholder="Venue name, guest count, vibe — anything helpful."
                 />
               </div>
+
+              <input
+                type="text"
+                name="company"
+                tabIndex={-1}
+                autoComplete="off"
+                value={honeypot}
+                onChange={(e) => setHoneypot(e.target.value)}
+                className="absolute left-[-9999px] opacity-0 pointer-events-none"
+                aria-hidden="true"
+              />
 
               {error && (
                 <p className="font-sans text-xs text-maroon">{error}</p>
