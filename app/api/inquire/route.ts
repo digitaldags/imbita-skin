@@ -4,7 +4,11 @@ import { NextResponse } from "next/server";
 export async function POST(req: Request) {
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
-    const { partner1, partner2, date, email, tier, notes } = await req.json();
+    const { partner1, partner2, date, email, tier, notes, company, elapsed } = await req.json();
+
+    if (company || (typeof elapsed === "number" && elapsed < 3000)) {
+      return NextResponse.json({ success: true });
+    }
 
     await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL!,
