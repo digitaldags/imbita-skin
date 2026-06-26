@@ -36,7 +36,7 @@ export default function Pricing() {
   return (
     <>
       <hr />
-      <section className="py-[72px] bg-maroon">
+      <section className="py-[48px] md:py-[72px] bg-maroon">
         <div className="max-w-[720px] mx-auto px-6">
           <p className="font-sans text-xs text-white/70 uppercase tracking-[0.08em]">
             Pricing
