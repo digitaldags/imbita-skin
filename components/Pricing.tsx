@@ -63,6 +63,14 @@ export default function Pricing() {
                 ₱5,000
               </p>
               <FeatureList items={premiumFeatures} inverted />
+              <a
+                href="https://imbita-skeleton.vercel.app/admin"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 font-sans text-xs text-white/60 hover:text-white transition-colors"
+              >
+                See admin demo →
+              </a>
             </div>
           </div>
 
