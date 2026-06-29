@@ -6,6 +6,7 @@ type Feature = {
   title: string;
   desc: string;
   premium?: boolean;
+  demoUrl?: string;
 };
 
 const features: Feature[] = [
@@ -40,6 +41,7 @@ const features: Feature[] = [
     title: "Admin panel",
     desc: "View and manage RSVPs from a private dashboard.",
     premium: true,
+    demoUrl: "https://imbita-skeleton.vercel.app/admin",
   },
 ];
 
@@ -56,7 +58,7 @@ export default function WhatsIncluded() {
             Everything your guests need, all in one place.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {features.map(({ icon: Icon, title, desc, premium }) => (
+            {features.map(({ icon: Icon, title, desc, premium, demoUrl }) => (
               <div key={title} className="flex gap-3">
                 <Icon className="w-4 h-4 text-text-muted shrink-0 mt-0.5" />
                 <div>
@@ -66,6 +68,16 @@ export default function WhatsIncluded() {
                       <span className="ml-2 text-[10px] font-medium text-maroon border border-maroon rounded-full px-2 py-0.5 align-middle">
                         Premium
                       </span>
+                    )}
+                    {demoUrl && (
+                      <a
+                        href={demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-2 text-[12px] font-normal text-maroon hover:underline align-middle"
+                      >
+                        See demo →
+                      </a>
                     )}
                   </p>
                   <p className="font-sans text-[13px] text-text-muted mt-0.5">{desc}</p>

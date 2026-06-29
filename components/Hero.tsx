@@ -20,7 +20,7 @@ export default function Hero() {
             Get started
           </a>
           <a
-            href="https://second-of-may.vercel.app"
+            href="https://imbita-skeleton.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="border border-text-primary text-text-primary text-sm font-medium px-5 py-2.5 rounded-md hover:bg-divider transition-colors"
@@ -37,7 +37,7 @@ export default function Hero() {
               <span className="w-2.5 h-2.5 rounded-full bg-[#D9D9D9] block" />
             </div>
             <div className="flex-1 bg-white/60 rounded px-3 py-1 text-xs text-text-muted text-center">
-              second-of-may.vercel.app
+              imbita-skeleton.vercel.app
             </div>
           </div>
           <div className="bg-background pb-10">
